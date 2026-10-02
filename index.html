@@ -152,6 +152,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 html{scroll-behavior:smooth}
+.womenfx{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(24px,5vw,72px);align-items:start}
+.big b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(72px,9.5vw,124px);line-height:.9;color:var(--accent);letter-spacing:-.02em}
+.big span{display:block;margin-top:16px;max-width:15em;color:var(--stage-muted)}
+.pull .label{color:var(--stage-muted);margin-bottom:22px}
+.pull .why{margin-top:24px;max-width:36em;font-size:18px}
+@media (max-width:860px){.womenfx{grid-template-columns:minmax(0,1fr)}}
 </style>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -163,6 +169,7 @@ html{scroll-behavior:smooth}
       <a class="mark" href="#top">Nadia Gabier</a>
       <ul>
         <li><a href="#formats">Speaking &amp; MC</a></li>
+        <li><a href="#women">Empowering women</a></li>
         <li><a href="#story">Her story</a></li>
         <li><a href="#topics">Topics</a></li>
         <li><a href="#booking">How booking works</a></li>
@@ -174,7 +181,7 @@ html{scroll-behavior:smooth}
       <div>
         <p class="label"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Speaker &amp; MC · Cape Town</p>
         <h1>Nadia <em>Gabier</em></h1>
-        <p class="lede">Nadia has worked in IT at Vodacom, in front of the camera as a model, and at kitchen tables with families who need care for someone they love. Along the way she has helped more than 2,000 women towards an income of their own.</p>
+        <p class="lede">Nadia spent 22 years in IT at IBM and around two more in telecoms at Vodacom, then founded her own elder care company, Smartcare 911. Her greatest passion is empowering women, and she has helped more than 2,000 of them towards an income of their own.</p>
         <p class="lede">She brings that range to every stage. Give her your theme and your audience, and she will deliver a talk or a programme that lands.</p>
         <div class="cta">
           <a class="btn btn-primary" href="#enquire">Check her availability</a>
@@ -187,9 +194,9 @@ html{scroll-behavior:smooth}
     </header>
 
     <ul class="facts">
-      <li><b>2,000+ women</b>upskilled towards a sustainable income</li>
+      <li><b>2,000+ women</b>empowered to earn a sustainable income</li>
       <li><b>Founder</b>Smartcare 911, at-home elder care</li>
-      <li><b>Vodacom</b>a corporate career in IT</li>
+      <li><b>22 years at IBM</b>in IT, then telecoms at Vodacom</li>
       <li><b>Modelling</b>years of camera and stage presence</li>
     </ul>
   </div>
@@ -223,43 +230,45 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
+<section class="pull" id="women">
+  <div class="wrap womenfx">
+    <div class="big"><b>2,000+</b><span>women empowered to earn a sustainable income of their own</span></div>
+    <figure>
+      <p class="label"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Empowering women</p>
+      <blockquote>A handout is a short-term solution. A skill is a <em>life-altering tool.</em></blockquote>
+      <p class="why">Empowering women is the work Nadia cares about most. She has given more than 2,000 women the information and skills to earn a sustainable income, because she believes dignified work changes a life in a way aid cannot. It is the subject she speaks on with the most conviction.</p>
+      <figcaption>The quote is how her approach was described in “Beyond Aid: Building Dignity Through Work”, a profile in the Investing in Women series, August 2025.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="story">
   <div class="wrap">
     <div class="head">
       <p class="label"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Her story</p>
-      <h2>Four very different rooms, one way of showing up</h2>
+      <h2>Two decades in corporate IT, then a company of her own</h2>
       <p>Nadia has built a career across technology, media, business and community work. She is at home in a boardroom, a ballroom and a community hall.</p>
     </div>
     <ul class="rooms">
       <li>
-        <h3>The corporate floor</h3>
-        <div><p>Nadia worked in IT at Vodacom, one of South Africa's largest companies. She knows deadlines, systems and what it takes to be heard in a technical team.</p></div>
+        <h3>Corporate IT</h3>
+        <div>
+          <p>Nadia spent 22 years in IT at IBM, then moved into the telecoms sector for around two years at Vodacom.</p>
+          <p>She knows large organisations from the inside: the deadlines, the systems and what it takes to be heard in a technical team.</p>
+        </div>
+      </li>
+      <li>
+        <h3>Her own company</h3>
+        <div>
+          <p>From corporate life she made the move to entrepreneurship and founded Smartcare 911, a Cape Town company that provides at-home care so older people can keep living safely and independently.</p>
+          <p>The company began while her late mother, Chanbebe, was unwell, and it still runs on her mother's words: “Care for others as you would care for me.”</p>
+        </div>
       </li>
       <li>
         <h3>The camera</h3>
         <div><p>Her modelling work taught her presence, timing and how to stay composed when every eye is on her. It is the craft behind how she carries a stage as an MC.</p></div>
       </li>
-      <li>
-        <h3>The family home</h3>
-        <div>
-          <p>She founded Smartcare 911, a Cape Town company that provides at-home care so older people can keep living safely and independently.</p>
-          <p>The company began while her late mother, Chanbebe, was unwell, and it still runs on her mother's words: “Care for others as you would care for me.”</p>
-        </div>
-      </li>
-      <li>
-        <h3>The training room</h3>
-        <div><p>Through upskilling initiatives she has helped more than 2,000 women gain the information and skills to earn a sustainable income. She believes in dignified work over handouts.</p></div>
-      </li>
     </ul>
-  </div>
-</section>
-
-<section class="pull">
-  <div class="wrap">
-    <figure>
-      <blockquote>A handout is a short-term solution. A skill is a <em>life-altering tool.</em></blockquote>
-      <figcaption>How Nadia's approach was described in “Beyond Aid: Building Dignity Through Work”, a profile in the Investing in Women series, August 2025.</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -273,10 +282,11 @@ html{scroll-behavior:smooth}
       <div>
         <h3>Signature topics</h3>
         <ul>
-          <li>Women and financial independence<span>What moves someone from needing help to earning for herself.</span></li>
+          <li>Empowering women to earn<span>What moves a woman from needing help to earning for herself, drawn from her work with more than 2,000 women.</span></li>
           <li>Dignity through work<span>Why skills last longer than aid, and how to design programmes that prove it.</span></li>
           <li>Caring for ageing parents<span>What families face, what good care looks like, and how employers can support staff who are carers.</span></li>
-          <li>Starting again in a new field<span>Moving from corporate IT to founding a care company.</span></li>
+          <li>Starting again in a new field<span>Leaving corporate IT after more than two decades to found a care company.</span></li>
+          <li>Women in technology<span>What two decades in IT taught her about being heard and getting ahead.</span></li>
           <li>Leading with compassion<span>Building a team whose work is looking after other people.</span></li>
           <li>Presence and confidence<span>Lessons from modelling on how to hold a room.</span></li>
         </ul>
