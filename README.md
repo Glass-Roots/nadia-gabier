@@ -6,4 +6,9 @@ The enquiry form builds a WhatsApp message and does not send anything on its own
 
 ## Deployment
 
-Everything in `public/` is the website. Pushing to `main` runs `.github/workflows/pages.yml`, which publishes `public/` to GitHub Pages at nadiagabier.co.za. The same folder is the Firebase Hosting root (`firebase.json`).
+Everything in `public/` is the website, hosted on Firebase (project `nadia-gabier`, domain nadiagabier.co.za).
+
+- Pushing to `main` deploys `public/` to the live site.
+- Each pull request gets a preview URL, posted as a comment on the PR. Previews expire after 7 days.
+
+Both workflows use the `FIREBASE_SERVICE_ACCOUNT_NADIA_GABIER` repository secret. To deploy by hand, run `firebase deploy --only hosting`.
