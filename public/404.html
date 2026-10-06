@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nadia Gabier</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>
+  // Unknown paths go to the home page. A path naming a section (e.g. /story) goes to that section.
+  (function () {
+    var sections = ["top", "story", "topics", "formats", "women", "booking", "enquire"];
+    var slug = location.pathname.replace(/^\/+|\/+$/g, "").split("/").pop().toLowerCase().replace(/\.html?$/, "");
+    var hash = location.hash || (sections.indexOf(slug) !== -1 ? "#" + slug : "");
+    location.replace("/" + hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="0; url=/">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #F5F5F1; color: #171A19; font-family: system-ui, sans-serif; }
+  a { color: #855F06; }
+</style>
+</head>
+<body>
+  <p>Taking you to <a href="/">the home page</a>…</p>
+</body>
+</html>
